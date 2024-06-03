@@ -1,0 +1,12 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"/movie/[id]": [
+		"src/routes/+layout.js"
+	],
+	"/search/[title]": [
+		"src/routes/+layout.js"
+	]
+}
