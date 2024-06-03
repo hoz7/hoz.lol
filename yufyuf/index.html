@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yusuf's page</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <script defer src="https://cdn.tailwindcss.com/"></script>
+
+    
+    <meta content="yufuf loves xiao jie" property="og:title"/>
+    <meta content="" property="og:description" />
+    <meta content="#000000" data-react-helmet="true" name="Yufyuf loves xiao jie" />
+    <meta name="description" content="Yufyuf loves xiao jie">
+</head>
+
+<body>
+    <div class="snowfall"></div>
+    <div class="content">
+        <div class="background">
+            <video id="background-video" loop playsinline autoplay>
+                <source src="assets\cat.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="box p-24 flex flex-col justify-center items-center">
+        <div class="user-info">
+            <img id="userPhoto" class="w-32 rounded-xl border" src="yufyuf.png" alt="arch">
+        </div>
+        <div class="box-text flex flex-col justify-center items-center mt-8">
+            <h1 class="">Yufyuf</h1>
+            <p id="typedText" class="typed-text"></p>
+        </div>
+    
+        <div class="socials space-x-2 text-2xl mt-4"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("click", function() {
+            var video = document.getElementById("background-video");
+            if (video.paused) {
+                video.play();
+            }
+        });
+    </script>
+</body>
+
+</html>
